@@ -28,7 +28,7 @@ header {
 }
 
 header h1 {
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: 200;
 }
 
@@ -41,8 +41,8 @@ header h1 {
 }
 
 button {
-	padding: 15px 30px;
-	font-size: 30px;
+	padding: 10px 200px;
+	font-size: 24px;
 	font-weight: 200;
 	color: var(--dark-yellow);
 	border-radius: 10px;
@@ -62,12 +62,12 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 	margin-left: 50px;
-	font-size: 26px;
+	font-size: 22px;
 }
 
 .counter {
 	display: inline-block;
-	font-size: 48px;
+	font-size: 40px;
 	font-weight: 400;
 	margin-left: 10px;
 	width: 30px;
@@ -85,7 +85,7 @@ button:hover {
 
 .card {
 	position: relative;
-	height: 200px;
+	height: 160px;
 	border-radius: 10px;
 	perspective: 800px;
 }
@@ -166,7 +166,7 @@ button:hover {
 .modal {
 	position: absolute;
 	left: 50%;
-	top: 200px;
+	top: 160px;
 	transform: translateX(-50%);
 	display: flex;
 	flex-direction: column;
@@ -187,19 +187,19 @@ button:hover {
 
 .win-modal h2,
 .highscores-modal h2 {
-	font-size: 48px;
-	margin-bottom: 20px;
+	font-size: 40px;
+	margin-bottom: 16px;
 	font-weight: 400;
 }
 
 .win-modal p {
-	font-size: 28px;
-	margin-bottom: 20px;
+	font-size: 24px;
+	margin-bottom: 16px;
 }
 
 .final-score {
 	font-weight: bold;
-	font-size: 36px;
+	font-size: 30px;
 }
 
 .new-highscore-input-area {
@@ -208,21 +208,21 @@ button:hover {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	margin-bottom: 20px;
-	height: 250px;
+	margin-bottom: 16px;
+	height: 220px;
 	overflow: hidden;
 	transition: height 0.3s;
 }
 .win-modal .new-highscore-input-area p {
-	margin-bottom: 15px;
-	font-size: 30px;
+	margin-bottom: 10px;
+	font-size: 24px;
 }
 
 .win-modal input {
-	font-size: 30px;
+	font-size: 24px;
 	width: 60%;
 	padding: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 16px;
 }
 
 .win-modal .modal-buttons {
@@ -234,20 +234,20 @@ button:hover {
 .highscores-modal {
 	visibility: hidden;
 	justify-content: space-between;
-	height: 700px;
+	height: 580px;
 	z-index: 10;
 }
 
 .highscores-modal h2 {
-	margin-top: 20px;
+	margin-top: 16px;
 }
 
 .highscores-modal button {
-	margin-bottom: 20px;
+	margin-bottom: 16px;
 }
 
 .highscores-modal ul {
-	font-size: 24px;
+	font-size: 20px;
 	list-style: none;
 	width: 80%;
 }
@@ -257,7 +257,7 @@ button:hover {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 5px;
-	font-size: 28px;
+	font-size: 22px;
 	border-bottom: 1px solid var(--dark-yellow);
 }
 
@@ -266,7 +266,7 @@ button:hover {
 }
 
 .highscores-modal .highscore {
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: 400;
 }
 
