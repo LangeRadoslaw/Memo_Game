@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo Game</title>
+    <script src="https://kit.fontawesome.com/a8d49e252e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <h1><i class="fa-solid fa-brain"></i> MemoGame</h1>
+        <button class="new-game">Nowa gra</button>
+        <button class="show-highscores">Najlepsze wyniki</button>
+        <p class="show-score">Liczba ruchów: <span class="counter"></span></p>
+    </header>
+
+    <div class="wrapper">
+
+        <div class="card card-1" id="1" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-1"></div>
+        </div>
+
+        <div class="card card-1" id="2" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-1"></div>
+        </div>
+
+        <div class="card card-2" id="3" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-2"></div>
+        </div>
+
+        <div class="card card-2" id="4" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-2"></div>
+        </div>
+
+        <div class="card card-3" id="5" onclick="showCard(id)">
+            <div class=" back img-back-1"></div>
+            <div class="front img-3"></div>
+        </div>
+
+        <div class="card card-3" id="6" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-3"></div>
+        </div>
+
+        <div class="card card-4" id="7" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-4"></div>
+        </div>
+
+        <div class="card card-4" id="8" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-4"></div>
+        </div>
+
+        <div class="card card-5" id="9" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-5"></div>
+        </div>
+
+        <div class="card card-5" id="10" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-5"></div>
+        </div>
+
+        <div class="card card-6" id="11" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-6"></div>
+        </div>
+
+        <div class="card card-6" id="12" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-6"></div>
+        </div>
+
+        <div class="card card-7" id="13" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-7"></div>
+        </div>
+
+        <div class="card card-7" id="14" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-7"></div>
+        </div>
+
+        <div class="card card-8" id="15" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-8"></div>
+        </div>
+
+        <div class="card card-8" id="16" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-8"></div>
+        </div>
+
+        <div class="card card-9" id="17" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-9"></div>
+        </div>
+
+        <div class="card card-9" id="18" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-9"></div>
+        </div>
+
+        <div class="card card-10" id="19" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-10"></div>
+        </div>
+
+        <div class="card card-10" id="20" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-10"></div>
+        </div>
+
+        <div class="card card-11" id="21" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-11"></div>
+        </div>
+
+        <div class="card card-11" id="22" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-11"></div>
+        </div>
+
+        <div class="card card-12" id="23" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-12"></div>
+        </div>
+
+        <div class="card card-12" id="24" onclick="showCard(id)">
+            <div class="back img-back-1"></div>
+            <div class="front img-12"></div>
+        </div>
+
+        <div class="win-modal modal">
+            <h2>Brawo!</h2>
+            <p>Potrzebowałeś <span class="final-score"></span> ruchów</p>
+
+            <div class="new-highscore-input-area">
+                <p>Gratulacje! Twój wynik trafia na listę najlepszych!</p>
+                <input class="name" type="text" placeholder="Podaj swoje imię">
+                <button class="confirm-hs-btn">Zapisz wynik</button>
+            </div>
+
+            <p>Czy chcesz zagrać jeszcze raz?</p>
+            <div class="modal-buttons">
+                <button class="cancel-btn">Nie</button>
+                <button class="again-btn">Tak</button>
+            </div>
+        </div>
+
+        <div class="highscores-modal modal">
+            <h2>Najlepsze wyniki</h2>
+            <ul class="highscores-list">
+            </ul>
+            <div class="modal-buttons">
+                <button class="close-highscores-btn">Zamknij</button>
+                <button class="reset-highscores-btn">Resetuj</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="customization">
+        <button class="customization-btn">Wygląd kart</button>
+        <div class="customization-popup">
+            <div class="img-custom img-back-1"></div>
+            <div class="img-custom img-back-2"></div>
+            <div class="img-custom img-back-3"></div>
+            <div class="img-custom img-back-4"></div>
+            
+        </div>
+    </div>
+
+    <div class="bg-shadow"></div>
+    <div class="js-container container"></div>
+
+    
+    <script src="/script.js"></script>
+</body>
+
+</html>
